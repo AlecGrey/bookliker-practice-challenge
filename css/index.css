@@ -1,18 +1,22 @@
+html, body {
+	height: 100%;
+}
+
 body {
+	margin: 0px;
 	display: grid;
 	grid-template-columns: 2fr 8fr
 }
 
 #list li {
-	margin: 10px 0px;
+	margin: 10px 10px 10px 0px;
+	color: rgb(224, 224, 224);
 	list-style-type: none;
 }
 
 #list li:hover {
 	cursor: pointer;
-	border-style: solid;
-	border-width: 2px;
-	border-color: rgba(85, 85, 85, 0.555);
+	font-style: italic;
 }
 
 img {
@@ -30,4 +34,24 @@ img {
 
 h1, h3.author {
 	text-align: center;
+}
+
+#list-panel {
+	height: 100%;
+	/* border-width: 2px;
+	border-style: solid;
+	border-color: black; */
+	background-color: rgba(79, 151, 151, 0.753);
+}
+
+#list {
+	/* border-width: 2px;
+	border-style: solid;
+	border-color: black; */
+	display: flex;
+	flex-direction: column;
+}
+
+#show-panel {
+	margin: 20px;
 }
